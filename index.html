@@ -7,7 +7,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="theme-color" content="#102c40">
-<meta name="description" content="Winter Campus Expo 会場・滋賀大学講堂へのアクセス。彦根駅からのアクセスと正門から講堂までの構内図。">
+<meta name="description" content="Winter Campus Expoの滋賀大学講堂へのアクセス。正門（21番）と来客用駐車場（22番）からの行き方、彦根駅からのアクセス。">
 <title>滋賀大学講堂へのアクセス | Winter Campus Expo</title>
 <style>
 :root{--navy:#102c40;--deep:#0e2638;--blue:#23668e;--ice:#e6f4f9;--text:#183449;--sub:#546c7c;--line:#d7e3ea;--orange:#e96f49}
@@ -41,7 +41,29 @@ a:focus-visible{outline:3px solid #eda646;outline-offset:4px}
 .section-header .overline{font-size:11px;color:#507c97;font-weight:800;letter-spacing:.14em}
 .section-header h2{font-size:clamp(23px,3.7vw,29px);letter-spacing:-.04em;margin:4px 0 0;line-height:1.4}
 .section-header p{font-size:14px;color:var(--sub);margin:7px 0 0}
+.route-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-bottom:18px}
+.route-choice{display:block;text-decoration:none;border:1px solid #d0dfe8;background:white;border-radius:15px;padding:16px 18px;position:relative;transition:border-color .18s,background .18s}
+.route-choice:hover{border-color:#629dc3;background:#f0f9fd}
+.route-choice:focus-visible{outline:3px solid #eda646;outline-offset:3px}
+.route-choice .route-kicker{font-size:11px;font-weight:850;letter-spacing:.08em;color:#527d94}
+.route-choice strong{display:block;font-size:18px;line-height:1.45;margin:4px 0}
+.route-choice small{display:block;font-size:12px;color:#647988}
+.route-choice.rear{border-color:#e5c9bb;background:#fffbf8}
+.route-choice.rear:hover{border-color:#c88765;background:#fff5ec}
+.route-choice.rear .route-kicker{color:#a25738}
 .grid{display:grid;grid-template-columns:minmax(0,1.37fr) minmax(285px,.84fr);gap:20px;align-items:start}
+.route-detail{padding:17px 0;scroll-margin-top:24px}
+.route-detail+.route-detail{border-top:1px solid var(--line)}
+.route-detail .route-kicker{font-size:11px;letter-spacing:.08em;color:#537d98;font-weight:850}
+.route-detail .route-kicker.rear-label{color:#a25738}
+.route-detail h4{font-size:17px;line-height:1.5;margin:4px 0 10px}
+.route-detail p{font-size:13px;color:var(--sub);margin:10px 0 0}
+.route-flow{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.route-flow .legend-item{font-size:13px}
+.route-flow .number{min-width:30px}
+.parking-warning{background:#fff4ea;color:#784c36;border:1px solid #f3d9c6;padding:13px 14px;border-radius:11px;font-size:12px;line-height:1.7;margin-top:16px}
+.parking-warning strong{display:block;color:#8f4525;margin-bottom:3px}
+
 .panel{background:white;border:1px solid var(--line);border-radius:17px;overflow:hidden}
 .panel-top{padding:17px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;align-items:center}
 .panel-top strong{font-size:15px}
@@ -85,7 +107,7 @@ footer{background:var(--deep);color:#adc5d2;font-size:12px;padding:26px 0}
 footer .foot{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
 footer a{color:#d9e9f3}
 @media(max-width:850px){.grid{grid-template-columns:1fr}.transport{grid-template-columns:1fr}.steps{padding:23px}.hero{padding-bottom:92px}}
-@media(max-width:580px){.wrap{width:calc(100% - 28px)}.top-inner{height:65px}.top-note{font-size:11px}.brand{font-size:12px}.hero{padding-top:37px}.hero h1{font-size:37px}.venue{flex-direction:column;align-items:stretch;padding:20px}.venue .primary{width:100%}.section-header{margin-top:31px}.panel-top{padding:15px}.map-bottom{padding:15px}.steps{padding:20px}.meta{gap:7px}.meta span{font-size:11px}}
+@media(max-width:580px){.route-options{grid-template-columns:1fr}.wrap{width:calc(100% - 28px)}.top-inner{height:65px}.top-note{font-size:11px}.brand{font-size:12px}.hero{padding-top:37px}.hero h1{font-size:37px}.venue{flex-direction:column;align-items:stretch;padding:20px}.venue .primary{width:100%}.section-header{margin-top:31px}.panel-top{padding:15px}.map-bottom{padding:15px}.steps{padding:20px}.meta{gap:7px}.meta span{font-size:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -94,31 +116,45 @@ footer a{color:#d9e9f3}
 <section id="top" class="hero"><div class="wrap">
 <span class="eyebrow">ACCESS · SHIGA UNIVERSITY</span>
 <h1>会場は、<br><em>滋賀大学講堂。</em></h1>
-<p class="hero-desc">Winter Campus Expoの会場までの行き方をご案内します。初めてお越しの方は、まず「滋賀大学彦根キャンパスの正門」を目指してください。</p>
+<p class="hero-desc">Winter Campus Expoの会場までの行き方をご案内します。正門からお越しの方にも、裏側の来客用駐車場付近からお越しの方にも、講堂までの位置関係をご案内します。</p>
 <div class="meta"><span>2026年12月2日（水）予定</span><span>17:00開始予定</span><span>滋賀県彦根市</span></div>
 </div></section>
 <main class="wrap main">
 <!-- Updated: 2026-10-26 | Winter Campus Expo Auditorium Access -->
 <section class="venue" aria-label="開催場所"><div><div class="venue-tag">EVENT VENUE</div><h2>滋賀大学 彦根キャンパス 講堂</h2><p>〒522-8522 滋賀県彦根市馬場1丁目1番1号</p></div><a class="primary" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%BB%8B%E8%B3%80%E5%A4%A7%E5%AD%A6%E8%AC%9B%E5%A0%82" target="_blank" rel="noopener noreferrer">Googleマップで確認 ↗</a></section>
 <section aria-labelledby="inside-title">
-<div class="section-header"><div class="overline">ON CAMPUS</div><h2 id="inside-title">正門から講堂まで</h2><p>滋賀大学の公式構内図で、会場の場所を確認できます。</p></div>
+<div class="section-header"><div class="overline">ON CAMPUS</div><h2 id="inside-title">講堂までの2つのアクセス</h2><p>正門または裏側の来客用駐車場付近から。公式構内図の番号で確認できます。</p></div>
+<nav class="route-options" aria-label="講堂へのアクセス方法">
+<a class="route-choice" href="#main-gate"><span class="route-kicker">ROUTE A · 徒歩・バスなど</span><strong>正門から講堂へ</strong><small>21 正門 → 1 講堂　／　行き方を見る ↓</small></a>
+<a class="route-choice rear" href="#rear-parking"><span class="route-kicker">ROUTE B · 裏側から</span><strong>来客用駐車場付近から講堂へ</strong><small>22 来客用駐車場 → 1 講堂　／　行き方を見る ↓</small></a>
+</nav>
 <div class="grid">
 <div class="panel">
 <div class="panel-top"><strong>彦根キャンパス構内図</strong><span class="source-tag">出典：滋賀大学経済学部</span></div>
-<div class="map-preview" id="map-preview"><img src="https://www.econ.shiga-u.ac.jp/econ/202509map.png" alt="滋賀大学彦根キャンパス公式構内図。正門は21番、講堂は1番です。" decoding="async" loading="eager" onerror="this.parentElement.classList.add('is-error')"><div class="unavailable">構内図を読み込めませんでした。下のリンクから大学公式ページをご覧ください。</div></div>
+<div class="map-preview" id="map-preview"><img src="https://www.econ.shiga-u.ac.jp/econ/202509map.png" alt="滋賀大学彦根キャンパス公式構内図。正門は21番、来客用駐車場は22番、講堂は1番です。" decoding="async" loading="eager" onerror="this.parentElement.classList.add('is-error')"><div class="unavailable">構内図を読み込めませんでした。下のリンクから大学公式ページをご覧ください。</div></div>
 <div class="map-bottom">
-<div class="map-legend"><span class="legend-item"><span class="number">21</span>正門</span><span class="legend-arrow" aria-hidden="true">→</span><span class="legend-item"><span class="number hall">1</span>滋賀大学講堂</span></div>
-<p class="map-tip">キャンパスに着いたら正門から入り、構内図の「1：滋賀大学講堂」の位置をご確認ください。</p>
+<div class="map-legend"><span class="legend-item"><span class="number">21</span>正門</span><span class="legend-item"><span class="number">22</span>来客用駐車場</span><span class="legend-item"><span class="number hall">1</span>講堂</span></div>
+<p class="map-tip">公式構内図の「21」「22」から、会場「1」の位置をご確認ください。線で描いた経路ではなく、施設の位置を示す案内です。</p>
 <div class="map-links"><a class="minor" href="https://www.econ.shiga-u.ac.jp/econ/202509map.png" target="_blank" rel="noopener noreferrer">構内図を拡大する ↗</a><a class="minor" href="https://www.econ.shiga-u.ac.jp/econ/12/1.html" target="_blank" rel="noopener noreferrer">大学公式の構内図 ↗</a></div>
 </div>
 </div>
-<div class="panel steps">
-<h3 class="steps-title">到着までの3ステップ</h3>
-<div class="step"><span class="step-icon" aria-hidden="true">01</span><div class="step-body"><strong>滋賀大学 彦根キャンパスへ</strong><p>JR彦根駅西口から、直行バスまたは徒歩などで向かいます。</p></div></div>
-<div class="step"><span class="step-icon" aria-hidden="true">21</span><div class="step-body"><strong>正門から入構</strong><p>公式構内図の「21」が正門です。</p></div></div>
-<div class="step"><span class="step-icon" aria-hidden="true">01</span><div class="step-body"><strong>講堂へ</strong><p>公式構内図の「1」がイベント会場の講堂です。</p></div></div>
-<div class="callout">講堂の入口・受付位置については、当日の主催者案内に従ってください。</div>
-</div>
+<aside class="panel steps" aria-label="各ルートの案内">
+<h3 class="steps-title">どちらからお越しですか？</h3>
+<section class="route-detail" id="main-gate">
+<span class="route-kicker">ROUTE A · 正門側</span>
+<h4>正門からお越しの方</h4>
+<div class="route-flow"><span class="legend-item"><span class="number">21</span> 正門</span><span class="legend-arrow" aria-hidden="true">→</span><span class="legend-item"><span class="number hall">1</span> 講堂</span></div>
+<p>大学の正門から入り、構内図の1番「滋賀大学講堂」へお進みください。彦根駅から徒歩・バスでお越しの場合はこちらをご確認ください。</p>
+</section>
+<section class="route-detail" id="rear-parking">
+<span class="route-kicker rear-label">ROUTE B · 来客用駐車場側</span>
+<h4>裏側の駐車場付近からお越しの方</h4>
+<div class="route-flow"><span class="legend-item"><span class="number">22</span> 来客用駐車場</span><span class="legend-arrow" aria-hidden="true">→</span><span class="legend-item"><span class="number hall">1</span> 講堂</span></div>
+<p>構内図の22番「来客用駐車場」の位置を起点に、1番「滋賀大学講堂」へ徒歩でお進みください。裏側の通用門の開放状況や実際の歩行動線は、当日の大学・主催者の案内に従ってください。</p>
+</section>
+<div class="parking-warning"><strong>駐車場のご利用について</strong>構内図に来客用駐車場が掲載されていても、イベント来場者の駐車が許可されているとは限りません。大学の施設利用案内では原則として駐車場を利用できません。お車でお越しの際は事前に主催者へ駐車可否をご確認ください。周辺施設・路上への無断駐車はおやめください。</div>
+<div class="callout">講堂の受付・入口は当日の案内に従ってください。</div>
+</aside>
 </div>
 </section>
 <section aria-labelledby="station-title">
@@ -128,7 +164,7 @@ footer a{color:#d9e9f3}
 <div class="transport-card"><div class="transport-label">02 · ON FOOT</div><h3>徒歩</h3><div class="time">約25分</div><p>彦根駅西口から彦根キャンパスの正門を目指します。所要時間は大学の目安です。</p><a href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%BD%A6%E6%A0%B9%E9%A7%85&amp;destination=%E6%BB%8B%E8%B3%80%E5%A4%A7%E5%AD%A6%E5%BD%A6%E6%A0%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9&amp;travelmode=walking" target="_blank" rel="noopener noreferrer">徒歩ルートを開く ↗</a></div>
 <div class="transport-card"><div class="transport-label">03 · TAXI</div><h3>タクシー</h3><div class="time">約5分</div><p>彦根駅から滋賀大学彦根キャンパスまで。到着後は講堂へお進みください。</p><a href="https://www.shiga-u.ac.jp/access/access-hikone/" target="_blank" rel="noopener noreferrer">大学公式アクセス案内 ↗</a></div>
 </div>
-<p class="note">※ 所要時間・バス運賃は大学公式案内を基にしています。混雑や交通状況により変わります。来客用駐車場は限られるため、公共交通機関の利用をおすすめします。イベント当日の駐車可否は主催者の案内をご確認ください。</p>
+<p class="note">※ 所要時間・バス運賃は大学公式案内を基にしています。混雑や交通状況により変わります。大学構内の駐車は原則不可と案内されています。お車での来場・入構方法は主催者へご確認ください。</p>
 </section>
 </main>
 <footer><div class="wrap foot"><span>Winter Campus Expo · 講堂アクセスガイド</span><span>構内図・交通情報：<a href="https://www.shiga-u.ac.jp/access/access-hikone/" target="_blank" rel="noopener noreferrer">滋賀大学公式</a> ／ <a href="https://www.econ.shiga-u.ac.jp/econ/12/1.html" target="_blank" rel="noopener noreferrer">滋賀大学経済学部</a></span></div></footer>
