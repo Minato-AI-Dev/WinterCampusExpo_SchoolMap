@@ -2,79 +2,131 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#112b3f">
-<meta name="description" content="Winter Campus Expo 来場者向け・滋賀大学彦根キャンパス会場案内">
-<title>Campus Guide | Winter Campus Expo</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102c40">
+<meta name="description" content="Winter Campus Expo 会場・滋賀大学講堂へのアクセス。彦根駅からのアクセスと正門から講堂までの構内図。">
+<title>滋賀大学講堂へのアクセス | Winter Campus Expo</title>
 <style>
-:root{--navy:#102c40;--blue:#1762a0;--ice:#e7f5fb;--ink:#1b3041;--muted:#627486;--line:#dce5ec;--white:#fff;--accent:#ec7357}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f8fb;color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
-a{color:inherit}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #edaa37;outline-offset:3px}
-.wrap{width:min(1130px,calc(100% - 36px));margin:auto}
-.header{background:var(--navy);color:white}.topbar{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-size:15px;font-weight:800;letter-spacing:.11em;text-decoration:none}.brand span{display:block;font-size:10px;opacity:.68;letter-spacing:.17em;font-weight:600}.top-link{font-size:12px;text-decoration:none;border:1px solid #597080;padding:7px 11px;border-radius:99px}
-.hero{background:radial-gradient(circle at 80% 20%,#39789a 0,transparent 38%),linear-gradient(130deg,#12334a,#163f5a);color:white;padding:49px 0 60px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-60px;bottom:-145px;width:380px;height:380px;border:1px solid #ffffff33;border-radius:50%;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff06;pointer-events:none}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.2em;color:#c0e5f7}.hero h1{font-size:clamp(35px,6vw,66px);line-height:1.13;margin:12px 0 15px;letter-spacing:-.04em}.hero p{max-width:650px;margin:0;color:#d6e8f3}.hero-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.hero-tags span{background:#ffffff1d;border:1px solid #ffffff35;border-radius:100px;padding:7px 15px;font-size:13px}
-main{margin-top:-26px;position:relative}.spotlight{background:white;border-radius:19px;box-shadow:0 12px 42px #12354c16;padding:23px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:5px solid var(--accent)}
-.spotlight .kicker{font-weight:800;color:#b94d39;font-size:12px;letter-spacing:.08em}.spotlight h2{margin:3px 0;font-size:26px}.spotlight p{margin:4px 0;color:var(--muted);font-size:14px}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:11px;background:var(--blue);color:white;text-decoration:none;border:0;padding:12px 16px;font-weight:750;font-size:14px;white-space:nowrap}.button.light{background:#eaf3f9;color:#194b70}.button.outline{background:white;color:var(--blue);border:1px solid #bed4e5}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:34px 0 16px}.section-head h2{font-size:24px;margin:0;letter-spacing:-.035em}.section-head p{font-size:13px;color:var(--muted);margin:0}
-.layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(310px,.85fr);gap:19px;align-items:start}.panel{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}.panel-heading{padding:16px 19px;display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:1px solid var(--line);font-size:14px;font-weight:800}.map-frame{height:550px;background:#e9f1f5;overflow:auto;text-align:center}.map-frame img{display:block;width:100%;height:auto;max-width:none}.map-frame img:not([src]){min-height:300px}.map-hint{padding:13px 17px;background:#f6fbfe;font-size:12px;color:#647587}.map-actions{padding:12px 16px;border-top:1px solid var(--line);display:flex;gap:9px;flex-wrap:wrap}.map-actions .button{padding:9px 12px;font-size:12px}
-.search-area{padding:15px 17px;border-bottom:1px solid var(--line)}.search{width:100%;border:1px solid #d0dce5;background:#f8fafb;border-radius:10px;padding:12px 13px;outline:none}.filters{display:flex;gap:6px;flex-wrap:wrap;margin-top:11px}.chip{border:1px solid #d4e1e9;background:white;border-radius:100px;padding:5px 10px;font-size:12px;color:#436177}.chip[aria-pressed=true]{background:#143e5a;color:white;border-color:#143e5a}.results{max-height:555px;overflow:auto}.place{width:100%;text-align:left;display:flex;align-items:flex-start;gap:12px;padding:14px 17px;background:white;border:0;border-bottom:1px solid #edf1f4}.place:hover,.place[aria-pressed=true]{background:#eef7fc}.place .num{background:#e9f2f8;color:#135487;display:flex;align-items:center;justify-content:center;border-radius:10px;min-width:40px;height:40px;font-weight:900}.place.featured .num{background:#ffe7df;color:#b8432c}.place strong{display:block;font-size:14px}.place small{display:block;color:#627486;font-size:11px;line-height:1.55;margin-top:3px}.empty{padding:24px;color:var(--muted);font-size:14px}.detail{padding:17px 19px;border-top:1px solid var(--line);background:#f5f9fc}.detail .detail-label{font-size:11px;color:#627486;font-weight:800}.detail h3{margin:3px 0;font-size:19px}.detail p{margin:5px 0 13px;color:#5a6b78;font-size:13px}.detail small{display:block;color:#708393;margin-top:8px}
-.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0 40px}.info{padding:20px;border:1px solid var(--line);border-radius:15px;background:white}.info h3{margin:0 0 7px;font-size:16px}.info p{font-size:13px;color:#647587;margin:0 0 13px}.info a{color:#165b90;font-size:13px;font-weight:800;text-underline-offset:3px}footer{background:#102c40;color:#b9cbd7;padding:22px 0;font-size:12px}footer a{color:white}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-@media(max-width:820px){.layout{grid-template-columns:1fr}.map-frame{height:500px}.results{max-height:350px}.info-grid{grid-template-columns:1fr}.spotlight{align-items:start;flex-direction:column}.hero{padding:36px 0 48px}}
-@media(max-width:500px){.wrap{width:min(100% - 28px,1130px)}.hero h1{font-size:41px}.spotlight{padding:19px}.spotlight h2{font-size:23px}.map-frame{height:430px}.section-head{display:block}.section-head p{margin-top:5px}}
+:root{--navy:#102c40;--deep:#0e2638;--blue:#23668e;--ice:#e6f4f9;--text:#183449;--sub:#546c7c;--line:#d7e3ea;--orange:#e96f49}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f5f9fb;color:var(--text);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+a{color:inherit}
+a:focus-visible{outline:3px solid #eda646;outline-offset:4px}
+.wrap{width:min(1080px,calc(100% - 36px));margin-inline:auto}
+.top{background:var(--deep);color:white}
+.top-inner{height:67px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{font-weight:800;text-decoration:none;font-size:15px;letter-spacing:.075em;line-height:1.2}
+.brand small{display:block;font-size:10px;letter-spacing:.16em;color:#9dc7da;font-weight:650;margin-top:5px}
+.top-note{color:#c5d8e2;font-size:12px;white-space:nowrap}
+.hero{background:radial-gradient(ellipse at 94% 12%,#305f7d 0%,transparent 44%),linear-gradient(115deg,#0e2a40,#1a455c);padding:48px 0 93px;color:white;position:relative;overflow:hidden}
+.hero:after{content:"";border:1px solid #ffffff28;border-radius:50%;height:460px;width:460px;position:absolute;top:12px;right:-155px;box-shadow:0 0 0 62px #ffffff06,0 0 0 125px #ffffff05;pointer-events:none}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.17em;color:#bce6f8;font-weight:800}
+.hero h1{font-size:clamp(32px,6vw,56px);letter-spacing:-.055em;line-height:1.32;margin:12px 0 15px;font-weight:850}
+.hero h1 em{color:#c8eefa;font-style:normal}
+.hero-desc{color:#dfedf4;margin:0;font-size:15px;max-width:670px}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.meta span{border:1px solid #ffffff48;background:#ffffff12;border-radius:100px;padding:6px 13px;font-size:12px}
+.main{margin-top:-54px;position:relative;padding-bottom:62px}
+.venue{background:white;border-radius:19px;border:1px solid var(--line);box-shadow:0 15px 42px #112f4519;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:22px 27px}
+.venue-tag{font-size:11px;font-weight:850;color:#b24f36;letter-spacing:.1em}
+.venue h2{font-size:clamp(23px,3vw,29px);margin:3px 0;line-height:1.35}
+.venue p{margin:5px 0 0;font-size:13px;color:var(--sub)}
+.primary{display:inline-flex;gap:9px;justify-content:center;align-items:center;padding:12px 18px;color:white;text-decoration:none;background:var(--blue);border-radius:11px;font-size:14px;font-weight:800;white-space:nowrap}
+.primary:hover{background:#174e71}
+.section-header{margin:35px 0 17px}
+.section-header .overline{font-size:11px;color:#507c97;font-weight:800;letter-spacing:.14em}
+.section-header h2{font-size:clamp(23px,3.7vw,29px);letter-spacing:-.04em;margin:4px 0 0;line-height:1.4}
+.section-header p{font-size:14px;color:var(--sub);margin:7px 0 0}
+.grid{display:grid;grid-template-columns:minmax(0,1.37fr) minmax(285px,.84fr);gap:20px;align-items:start}
+.panel{background:white;border:1px solid var(--line);border-radius:17px;overflow:hidden}
+.panel-top{padding:17px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;align-items:center}
+.panel-top strong{font-size:15px}
+.source-tag{font-size:11px;color:#698494;text-align:right}
+.map-preview{position:relative;background:#e8f2f7;text-align:center}
+.map-preview img{display:block;width:100%;height:auto;max-width:100%}
+.map-preview .unavailable{display:none;padding:42px 20px;color:var(--sub);font-size:14px}
+.map-preview.is-error .unavailable{display:block}
+.map-preview.is-error img{display:none}
+.map-bottom{padding:16px 20px;border-top:1px solid var(--line)}
+.map-legend{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:11px}
+.legend-item{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:750}
+.number{display:inline-flex;align-items:center;justify-content:center;min-width:29px;height:29px;border-radius:8px;background:var(--blue);color:white;font-size:12px;font-weight:900}
+.number.hall{background:var(--orange)}
+.legend-arrow{color:#7590a0;font-size:20px;font-weight:bold}
+.map-tip{margin:0;font-size:13px;color:var(--sub)}
+.map-links{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+.minor{display:inline-flex;padding:9px 13px;border-radius:9px;text-decoration:none;border:1px solid #b9d1e0;color:#195c81;font-weight:800;font-size:12px}
+.minor:hover{background:var(--ice)}
+.steps{padding:23px 24px}
+.steps-title{font-size:18px;margin:0 0 24px;line-height:1.45}
+.step{display:flex;gap:15px;position:relative;padding-bottom:28px}
+.step:last-of-type{padding-bottom:10px}
+.step:not(:last-of-type):after{content:"";position:absolute;left:20px;top:42px;bottom:0;width:2px;background:#d7e7ef}
+.step-icon{width:42px;height:42px;border-radius:12px;background:#e7f2f8;flex:0 0 42px;display:flex;align-items:center;justify-content:center;font-weight:850;color:#165d84}
+.step:last-of-type .step-icon{color:#b9472d;background:#fff0e8}
+.step-body{padding-top:3px}
+.step-body strong{font-size:16px;display:block;line-height:1.45}
+.step-body p{font-size:13px;color:var(--sub);margin:5px 0 0}
+.callout{margin-top:20px;padding:15px 16px;background:#eaf5f9;border-radius:10px;font-size:13px;color:#234f65}
+.transport{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.transport-card{background:white;border:1px solid var(--line);border-radius:15px;padding:19px 20px}
+.transport-label{color:#5b849b;font-weight:850;font-size:11px;letter-spacing:.09em}
+.transport-card h3{font-size:18px;margin:7px 0 7px;line-height:1.4}
+.transport-card p{font-size:13px;color:var(--sub);margin:0}
+.transport-card .time{font-size:25px;color:#173f5a;font-weight:850;line-height:1.35;margin:5px 0 8px}
+.transport-card .time span{font-size:13px;color:var(--sub);font-weight:600}
+.transport-card a{display:inline-block;margin-top:13px;font-size:12px;color:#155f90;font-weight:800;text-decoration-thickness:1px;text-underline-offset:3px}
+.note{margin-top:17px;font-size:12px;line-height:1.75;color:#6d8090}
+footer{background:var(--deep);color:#adc5d2;font-size:12px;padding:26px 0}
+footer .foot{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+footer a{color:#d9e9f3}
+@media(max-width:850px){.grid{grid-template-columns:1fr}.transport{grid-template-columns:1fr}.steps{padding:23px}.hero{padding-bottom:92px}}
+@media(max-width:580px){.wrap{width:calc(100% - 28px)}.top-inner{height:65px}.top-note{font-size:11px}.brand{font-size:12px}.hero{padding-top:37px}.hero h1{font-size:37px}.venue{flex-direction:column;align-items:stretch;padding:20px}.venue .primary{width:100%}.section-header{margin-top:31px}.panel-top{padding:15px}.map-bottom{padding:15px}.steps{padding:20px}.meta{gap:7px}.meta span{font-size:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header class="header"><div class="wrap topbar"><a href="#" class="brand">WINTER CAMPUS EXPO<span>VISITOR CAMPUS GUIDE</span></a><a class="top-link" href="https://www.shiga-u.ac.jp/information/campus-access/campusmap/" target="_blank" rel="noopener">滋賀大学公式マップ ↗</a></div></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">SHIGA UNIVERSITY · HIKONE</div><h1>迷わず、<br>会場へ。</h1><p>Winter Campus Expo のための彦根キャンパス案内。会場の講堂や、キャンパス内の施設を確認できます。</p><div class="hero-tags"><span>2026.12.02 WED</span><span>17:00 START（予定）</span><span>滋賀大学 彦根キャンパス</span></div></div></section>
-<main class="wrap">
-<section class="spotlight" aria-label="イベント会場"><div><div class="kicker">EVENT VENUE · MAP No.01</div><h2>滋賀大学講堂</h2><p>Winter Campus Expo 開催予定会場｜正門からの経路は公式マップでご確認ください。</p></div><a class="button" href="#campus-map">マップを見る ↓</a></section>
-<div class="section-head" id="campus-map"><div><h2>キャンパスマップ</h2><p>滋賀大学経済学部の公式構内図を使用しています。番号は施設一覧と対応します。</p></div></div>
-<div class="layout"><section class="panel" aria-label="公式キャンパスマップ"><div class="panel-heading"><span>彦根キャンパス · 公式構内図</span><span style="color:#8194a5;font-size:11px">出典：滋賀大学経済学部</span></div><div class="map-frame"><img id="campus-image" src="https://www.econ.shiga-u.ac.jp/econ/202509map.png" alt="滋賀大学彦根キャンパスの公式構内図。講堂は1番、正門は21番。詳細は右側の施設一覧または公式サイト参照。" loading="eager"></div><div class="map-hint">大学公式の構内図を画像で表示しています。講堂は「1」、正門は「21」です。地図が表示されない場合は下の公式リンクをご利用ください。</div><div class="map-actions"><a class="button" href="https://www.econ.shiga-u.ac.jp/econ/202509map.png" target="_blank" rel="noopener">構内図を拡大して開く ↗</a><a class="button outline" href="https://www.shiga-u.ac.jp/wp/wp-content/uploads/hikone-campusmap.pdf" target="_blank" rel="noopener">PDF版 ↗</a></div></section>
-<section class="panel" aria-label="施設検索"><div class="panel-heading"><span>施設を探す</span><span id="count" style="color:#789">23地点</span></div><div class="search-area"><label for="query" style="font-size:12px;color:#687f91">施設名・キーワードで検索</label><input id="query" class="search" type="search" placeholder="例：講堂、図書館、生協" autocomplete="off"><div class="filters" aria-label="施設カテゴリ"><button type="button" class="chip" data-filter="all" aria-pressed="true">すべて</button><button type="button" class="chip" data-filter="venue" aria-pressed="false">イベント会場</button><button type="button" class="chip" data-filter="study" aria-pressed="false">学習・研究</button><button type="button" class="chip" data-filter="other" aria-pressed="false">その他</button><button type="button" class="chip" data-filter="arrival" aria-pressed="false">入口・アクセス</button></div></div><div id="places" class="results" aria-live="polite"></div><div id="detail" class="detail" aria-live="polite"></div></section></div>
-<div class="section-head"><div><h2>来場される方へ</h2><p>アクセスと当日の確認事項</p></div></div>
-<section class="info-grid">
-<div class="info"><h3>所在地</h3><p>〒522-8522 滋賀県彦根市馬場1丁目1番1号</p><a href="https://www.google.com/maps/search/?api=1&query=%E6%BB%8B%E8%B3%80%E5%A4%A7%E5%AD%A6%E5%BD%A6%E6%A0%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9" target="_blank" rel="noopener">Google マップで場所を確認 ↗</a></div>
-<div class="info"><h3>キャンパスへのアクセス</h3><p>JR彦根駅西口から徒歩約25分、直行バスで約10分（4番のりば・運行日は公式情報を確認）。</p><a href="https://www.shiga-u.ac.jp/access/access-hikone/" target="_blank" rel="noopener">大学のアクセス案内 ↗</a></div>
-<div class="info"><h3>ご案内</h3><p>本サイトはイベント向けの非公式ガイドです。正門は公式図の21番。受付位置・入場方法・駐車場利用は確定次第更新します。</p><a href="https://www.econ.shiga-u.ac.jp/econ/12/1.html" target="_blank" rel="noopener">23地点掲載の公式構内図 ↗</a></div>
-</section></main>
-<footer><div class="wrap foot"><span>© 2026 Winter Campus Expo · Visitor Guide</span><span>構内図出典：<a href="https://www.econ.shiga-u.ac.jp/econ/12/1.html">滋賀大学経済学部</a> ／ <a href="https://www.shiga-u.ac.jp/information/campus-access/campusmap/">滋賀大学</a></span></div></footer>
-<script>
-"use strict";
-const facilities=[
-[1,"滋賀大学講堂","Winter Campus Expo 開催予定会場。国の登録有形文化財。","venue","講堂 会場 イベント"],
-[2,"本部管理棟","大学本部・総務課など","other","本部"],
-[3,"経済学部附属史料館","歴史資料の施設","study","史料館"],
-[4,"総合研究棟「士魂商才館」","経済経営研究所など","study","研究棟"],
-[5,"保健管理センター棟","保健管理センターなど","other","保健"],
-[6,"校舎棟","学務課・学生支援課・開放型学習スペースなど","study","教室 学生センター"],
-[7,"データサイエンスみらい創造館","2027年1月供用開始予定（大学公式案内による）","study","データサイエンス"],
-[8,"大学生協・購買・カフェLAGUNA","大学生協・購買・カフェ","other","食堂 カフェ 生協 飲食"],
-[9,"課外活動施設","サークル等の活動施設","other","サークル"],
-[10,"FASアリーナ（体育館）","体育館・柔剣道場・トレーニング室","other","体育館 スポーツ"],
-[11,"第2校舎棟","ラーニング・コモンズなど","study","教室 学習"],
-[12,"データサイエンス棟","データサイエンス関連施設","study","DS"],
-[13,"イニシアティブ棟","データサイエンス・AIイノベーション研究推進センター","study","AI"],
-[14,"研究棟","入試課など","study","入試"],
-[15,"附属図書館","図書館・図書情報課など","study","本 図書館"],
-[16,"陵水会館","国の登録有形文化財","other","陵水"],
-[17,"弓道場","弓道場","other","弓道"],
-[18,"運動場・グラウンド","彦根キャンパスの運動場・野球場","other","グラウンド 野球場"],
-[19,"プール","プール","other","プール"],
-[20,"テニスコート","テニスコート","other","テニス"],
-[21,"正門","初めての来場者が確認する入口。公式構内図の21番です。","arrival","入口 入場 正門 門衛所"],
-[22,"来客用駐車場","利用可否はイベント主催側からの案内を優先してください。","arrival","駐車場 車"],
-[23,"直行バス乗り場","バス利用時は最新の時刻表と運行状況をご確認ください。","arrival","バス 直行"]
-];
-let filter="all", selected=1;
-const list=document.getElementById("places"),detail=document.getElementById("detail"),query=document.getElementById("query");
-function addText(el,tag,txt,cls){const x=document.createElement(tag);if(cls)x.className=cls;x.textContent=txt;el.appendChild(x);return x}
-function render(){const q=query.value.trim().toLocaleLowerCase("ja-JP");const matching=facilities.filter(f=>(filter==="all"||f[3]===filter)&&(f[1]+" "+f[2]+" "+f[4]).toLocaleLowerCase("ja-JP").includes(q));list.replaceChildren();document.getElementById("count").textContent=matching.length+"地点";
-if(!matching.length)addText(list,"div","該当する施設がありません。","empty");
-for(const f of matching){const b=document.createElement("button");b.type="button";b.className="place"+(f[0]===1?" featured":"");b.setAttribute("aria-pressed",String(f[0]===selected));addText(b,"span",String(f[0]).padStart(2,"0"),"num");const info=document.createElement("span");addText(info,"strong",f[1]);addText(info,"small",f[2]);b.appendChild(info);b.addEventListener("click",()=>{selected=f[0];render()});list.appendChild(b)}
-const f=facilities.find(x=>x[0]===selected);detail.replaceChildren();addText(detail,"div","選択中の施設 · 公式マップ No."+String(f[0]).padStart(2,"0"),"detail-label");addText(detail,"h3",f[1]);addText(detail,"p",f[2]);addText(detail,"small","公式構内図の同じ番号をご確認ください。スマートフォンでは地図は施設一覧の上に表示されます。")}
-query.addEventListener("input",render);
-document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.filter;document.querySelectorAll("[data-filter]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render()}));
-render();
-</script>
-</body></html>
+<header class="top"><div class="wrap top-inner"><a class="brand" href="#top">WINTER CAMPUS EXPO<small>VENUE ACCESS GUIDE</small></a><span class="top-note">会場アクセス</span></div></header>
+<section id="top" class="hero"><div class="wrap">
+<span class="eyebrow">ACCESS · SHIGA UNIVERSITY</span>
+<h1>会場は、<br><em>滋賀大学講堂。</em></h1>
+<p class="hero-desc">Winter Campus Expoの会場までの行き方をご案内します。初めてお越しの方は、まず「滋賀大学彦根キャンパスの正門」を目指してください。</p>
+<div class="meta"><span>2026年12月2日（水）予定</span><span>17:00開始予定</span><span>滋賀県彦根市</span></div>
+</div></section>
+<main class="wrap main">
+<section class="venue" aria-label="開催場所"><div><div class="venue-tag">EVENT VENUE</div><h2>滋賀大学 彦根キャンパス 講堂</h2><p>〒522-8522 滋賀県彦根市馬場1丁目1番1号</p></div><a class="primary" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%BB%8B%E8%B3%80%E5%A4%A7%E5%AD%A6%E8%AC%9B%E5%A0%82" target="_blank" rel="noopener noreferrer">Googleマップで確認 ↗</a></section>
+<section aria-labelledby="inside-title">
+<div class="section-header"><div class="overline">ON CAMPUS</div><h2 id="inside-title">正門から講堂まで</h2><p>滋賀大学の公式構内図で、会場の場所を確認できます。</p></div>
+<div class="grid">
+<div class="panel">
+<div class="panel-top"><strong>彦根キャンパス構内図</strong><span class="source-tag">出典：滋賀大学経済学部</span></div>
+<div class="map-preview" id="map-preview"><img src="https://www.econ.shiga-u.ac.jp/econ/202509map.png" alt="滋賀大学彦根キャンパス公式構内図。正門は21番、講堂は1番です。" decoding="async" loading="eager" onerror="this.parentElement.classList.add('is-error')"><div class="unavailable">構内図を読み込めませんでした。下のリンクから大学公式ページをご覧ください。</div></div>
+<div class="map-bottom">
+<div class="map-legend"><span class="legend-item"><span class="number">21</span>正門</span><span class="legend-arrow" aria-hidden="true">→</span><span class="legend-item"><span class="number hall">1</span>滋賀大学講堂</span></div>
+<p class="map-tip">キャンパスに着いたら正門から入り、構内図の「1：滋賀大学講堂」の位置をご確認ください。</p>
+<div class="map-links"><a class="minor" href="https://www.econ.shiga-u.ac.jp/econ/202509map.png" target="_blank" rel="noopener noreferrer">構内図を拡大する ↗</a><a class="minor" href="https://www.econ.shiga-u.ac.jp/econ/12/1.html" target="_blank" rel="noopener noreferrer">大学公式の構内図 ↗</a></div>
+</div>
+</div>
+<div class="panel steps">
+<h3 class="steps-title">到着までの3ステップ</h3>
+<div class="step"><span class="step-icon" aria-hidden="true">01</span><div class="step-body"><strong>滋賀大学 彦根キャンパスへ</strong><p>JR彦根駅西口から、直行バスまたは徒歩などで向かいます。</p></div></div>
+<div class="step"><span class="step-icon" aria-hidden="true">21</span><div class="step-body"><strong>正門から入構</strong><p>公式構内図の「21」が正門です。</p></div></div>
+<div class="step"><span class="step-icon" aria-hidden="true">01</span><div class="step-body"><strong>講堂へ</strong><p>公式構内図の「1」がイベント会場の講堂です。</p></div></div>
+<div class="callout">講堂の入口・受付位置については、当日の主催者案内に従ってください。</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="station-title">
+<div class="section-header"><div class="overline">FROM HIKONE STATION</div><h2 id="station-title">彦根駅からのアクセス</h2><p>JR彦根駅の西口をご利用ください。</p></div>
+<div class="transport">
+<div class="transport-card"><div class="transport-label">01 · DIRECT BUS</div><h3>大学直行バス</h3><div class="time">約10分</div><p>西口4番のりばから乗車。運賃100円、現金のみ。運行日時・時刻表は公式案内をご確認ください。</p><a href="https://www.shiga-u.ac.jp/access/access-hikone/" target="_blank" rel="noopener noreferrer">運行情報を確認 ↗</a></div>
+<div class="transport-card"><div class="transport-label">02 · ON FOOT</div><h3>徒歩</h3><div class="time">約25分</div><p>彦根駅西口から彦根キャンパスの正門を目指します。所要時間は大学の目安です。</p><a href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%BD%A6%E6%A0%B9%E9%A7%85&amp;destination=%E6%BB%8B%E8%B3%80%E5%A4%A7%E5%AD%A6%E5%BD%A6%E6%A0%B9%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9&amp;travelmode=walking" target="_blank" rel="noopener noreferrer">徒歩ルートを開く ↗</a></div>
+<div class="transport-card"><div class="transport-label">03 · TAXI</div><h3>タクシー</h3><div class="time">約5分</div><p>彦根駅から滋賀大学彦根キャンパスまで。到着後は講堂へお進みください。</p><a href="https://www.shiga-u.ac.jp/access/access-hikone/" target="_blank" rel="noopener noreferrer">大学公式アクセス案内 ↗</a></div>
+</div>
+<p class="note">※ 所要時間・バス運賃は大学公式案内を基にしています。混雑や交通状況により変わります。来客用駐車場は限られるため、公共交通機関の利用をおすすめします。イベント当日の駐車可否は主催者の案内をご確認ください。</p>
+</section>
+</main>
+<footer><div class="wrap foot"><span>Winter Campus Expo · 講堂アクセスガイド</span><span>構内図・交通情報：<a href="https://www.shiga-u.ac.jp/access/access-hikone/" target="_blank" rel="noopener noreferrer">滋賀大学公式</a> ／ <a href="https://www.econ.shiga-u.ac.jp/econ/12/1.html" target="_blank" rel="noopener noreferrer">滋賀大学経済学部</a></span></div></footer>
+</body>
+</html>
